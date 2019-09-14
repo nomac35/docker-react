@@ -6,4 +6,4 @@ before_install:
   - docker build -t nomac/docker-reactor -f Dockerfile.dev . 
 
 script:
-  - docker run -e CI=true nomac/docker-reactor npm run test -- -- coverage
+  - docker run -e CI=true nomac/docker-reactor npm run test
